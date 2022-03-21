@@ -1,0 +1,41 @@
+num1 = 19810807 
+num2 = 20220314
+dia = 0
+while num1 > 10000000:
+   dia1 = num1 % 10
+   num1 = num1 // 10 
+   digito1 = num1 % 10
+   dia1 = dia1 + digito1*10
+
+while num1 > 100000:
+   mes1 = num1 % 10
+   num1 = num1 // 10 
+   digito1 = num1 % 10
+   mes1 = mes1 + digito1*10
+
+year1 = num1 // 10
+
+while num2 > 10000000:
+   dia2 = num2 % 10
+   num2 = num2 // 10 
+   digito2 = num2 % 10
+   dia2 = dia2 + digito2*10
+
+while num2 > 100000:
+   mes2 = num2 % 10
+   num2 = num2 // 10 
+   digito2 = num2 % 10
+   mes2 = mes2 + digito1*10
+
+year2 = num2 // 10
+
+
+year3 = abs(year1 - year2)
+mes3 = abs(mes1 - mes2)
+dia3 = abs(dia1 - dia2)
+if mes1 > mes2:
+  year3 = year3 - 1
+print(abs(year3))
+print(abs(mes3))
+print(abs(dia3))
+print(year3*10000+mes3*100+dia3)
