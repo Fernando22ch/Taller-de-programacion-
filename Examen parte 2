@@ -1,0 +1,24 @@
+print("-------------------")
+print("Tic Tac Toe Ganador")
+print("-------------------")
+
+#solo pude implementar la lógica debido al tiempo 
+tablero="lugar donde se juega"
+
+def gana(x):
+    "aquí se verifica si se gana en fila, en el segundo espacio las columnas y en el ultimo las diagonales"
+    if tablero[0] == [x,x,x] or tablero[1] == [x,x,x] or tablero[2] == [x,x,x]:
+        return True	
+   
+    elif tablero[0][0] == x and tablero[1][0] == x and tablero[2][0] == x:
+        return True
+    elif tablero[0][1] == x and tablero[1][1] == x and tablero[2][1] == x:
+        return True
+    elif tablero[0][2] == x and tablero[1][2] == x and tablero[2][2] == x:
+        return True
+        
+    elif tablero[0][0] == x and tablero[1][1] == x and tablero[2][2] == x:
+        return True
+    elif tablero[0][2] == x and tablero[1][1] == x and tablero[2][0] == x:
+        return True
+    return False
