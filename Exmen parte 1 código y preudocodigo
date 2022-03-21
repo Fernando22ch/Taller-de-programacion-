@@ -39,3 +39,19 @@ print(abs(year3))
 print(abs(mes3))
 print(abs(dia3))
 print(year3*10000+mes3*100+dia3)
+
+inicio
+  Se pide el primer numero y se guarda en variable
+  se pide el segundo y se guardan en varible
+  se sacan los digitos del dia dividiendo entre 100 el primer numero
+  se sacan los digitos del mes dividiendo entre 100 el primer numero
+  el restanse corresponde a los a;os del primer numero
+  se sacan los digitos del dia dividiendo entre 100 el segundo numero
+  se sacan los digitos del mes dividiendo entre 100 el segundo numero
+  el restante corresponde a los años del segundo numero
+  se restan los años
+  se restan los meses
+  se restan los dias
+  si el mes del numero 1 es mayor al des numero dos se le resta 1 a los años 
+  se imprime el resultado de los a;os por 10000 mas los meses por 100 y los dias
+fin
